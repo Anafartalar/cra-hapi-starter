@@ -55,6 +55,10 @@ export default class Login extends Component {
 
 
      loginBtnOnClick = async () => {
+
+        return this.props.stores.user.setUser({ token:"xxxxx", name:"xxxx" });
+
+
         if (!this.formValidation.isFormValid) {
             return;
         }

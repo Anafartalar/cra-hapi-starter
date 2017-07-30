@@ -19,7 +19,7 @@ const header=({userAuth=false,signOut,setDrawerStatus})=>{
 
   return(
     <AppBar onLeftIconButtonTouchTap={()=>setDrawerStatus(true)} titleStyle={style}
-      title="Güler'lerin Evi" showMenuIconButton={userAuth} iconElementRight={signOutBtn} />
+      title="React App" showMenuIconButton={userAuth} iconElementRight={signOutBtn} />
   );
 };
 

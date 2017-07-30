@@ -14,10 +14,10 @@ export default class ValidationStore {
 
     reactionDisposers = [];
     timer = null;
+    fields = {};
 
     constructor(rules) {
         const keys = Object.keys(rules);
-        this.fields = {};
 
         keys.forEach((k) => {
 
@@ -26,7 +26,7 @@ export default class ValidationStore {
                 status: getObservables()
             }
 
-            // add reactions to respond value changes
+            // reactions to respond value changes
             let re = reaction(() => this.fields[k].status.value,
                 () => this.validateWithDelay(k));
 
@@ -72,8 +72,8 @@ export default class ValidationStore {
     @computed get isFormValid() {
         const keys = Object.keys(this.fields);
 
-        for (let x in keys) {
-            let k = keys[x];
+        for (let k of keys) {
+            //let k = keys[x];
 
             if (this.fields[k].status.dirty && this.fields[k].status.error) {
                 return false;

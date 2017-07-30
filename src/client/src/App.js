@@ -24,7 +24,7 @@ export default class App extends Component {
   }
 
   navigateTo = (path) => {
-    if(this.props.location.pathname==path) return;
+    if(this.props.location.pathname===path) return;
     
     this.props.history.push(path);
 

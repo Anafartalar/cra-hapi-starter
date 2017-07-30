@@ -21,3 +21,6 @@ export default class AuthenticatedRoute extends Component {
 
     }
 }
+
+
+// https://tylermcginnis.com/react-elements-vs-react-components/

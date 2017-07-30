@@ -1,0 +1,23 @@
+{
+  "name": "cra_hapi",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "boom": "^5.1.0",
+    "config": "^1.26.1",
+    "hapi": "^16.4.3",
+    "hapi-auth-jwt2": "^7.2.4",
+    "hapi-io": "^0.2.0",
+    "inert": "^4.2.0",
+    "isomorphic-fetch": "^2.2.1",
+    "joi": "^10.5.2",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.10.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node --harmony server.js",
+    "nodemon": "nodemon --harmony server.js"
+  }
+}
